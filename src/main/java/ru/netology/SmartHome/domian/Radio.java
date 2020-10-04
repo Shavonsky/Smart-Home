@@ -58,9 +58,7 @@ public class Radio {
 
     public void setVolume(int[] volume) {
         this.volume = volume;
-        {
             return;
-        }
 
     }
 
