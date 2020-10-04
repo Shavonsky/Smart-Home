@@ -43,6 +43,12 @@ public class Radio {
     }
 
     public void setNumberStation(int[] numberStation) {
+        if (numberStation > radioStation) {
+            return;
+        }
+        if (numberStation < radioStation) {
+            return;
+        }
         this.numberStation = numberStation;
     }
 
