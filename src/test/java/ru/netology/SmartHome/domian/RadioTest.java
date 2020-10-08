@@ -12,7 +12,7 @@ class RadioTest {
     void numberRadioStation() {
         radio.setRadioStation(9);
         radio.numberRadioStation();
-        int expected = 0;
+        int expected = 9;
         assertEquals(expected, radio.getRadioStation());
     }
 
@@ -28,7 +28,7 @@ class RadioTest {
     void numberRadioStation2() {
         radio.setRadioStation(-7);
         radio.numberRadioStation();
-        int expected = 9;
+        int expected = 0;
         assertEquals(expected, radio.getRadioStation());
     }
 
@@ -44,7 +44,7 @@ class RadioTest {
     void numberRadioStation3() {
         radio.setRadioStation(0);
         radio.numberRadioStation();
-        int expected = 9;
+        int expected = 0;
         assertEquals(expected, radio.getRadioStation());
     }
 
@@ -60,7 +60,7 @@ class RadioTest {
     void numberRadioStation4() {
         radio.setRadioStation(11);
         radio.numberRadioStation();
-        int expected = 0;
+        int expected = 9;
         assertEquals(expected, radio.getRadioStation());
     }
 

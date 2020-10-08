@@ -3,10 +3,10 @@ package ru.netology.SmartHome.domian;
 public class Radio {
     private int radioStation;
     private int soundVolume;
-    private int maxRadioStation;
-    private int minRadioStation;
-    private int maxVolume;
-    private int minVolume;
+    private int maxRadioStation = 9;
+    private int minRadioStation = 0;
+    private int maxVolume = 10;
+    private int minVolume = 0;
 
     public void setMaxRadioStation(int maxRadioStation) {
         if (maxRadioStation > radioStation) {
@@ -75,11 +75,11 @@ public class Radio {
     }
 
     public void numberRadioStation() {
-        if (maxRadioStation <= radioStation) {
+        if (maxRadioStation < radioStation) {
             radioStation = minRadioStation;
             return;
         }
-        if (minRadioStation >= radioStation) {
+        if (minRadioStation > radioStation) {
             radioStation = maxRadioStation;
             return;
         }
