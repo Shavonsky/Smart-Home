@@ -1,3 +1,3 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-Conditioner,ru.netology.SmartHome.domian,Conditioner,15,48,0,4,6,18,5,10,5,8
-Conditioner,ru.netology.SmartHome.domian,Radio,14,219,0,16,6,35,4,15,4,7
+Conditioner,ru.netology.SmartHome.domian,Conditioner,17,54,2,6,8,18,7,10,5,8
+Conditioner,ru.netology.SmartHome.domian,Radio,28,123,0,16,12,39,8,17,8,9

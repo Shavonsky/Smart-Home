@@ -1,83 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Radio.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Conditioner</a> &gt; <a href="index.source.html" class="el_package">ru.netology.SmartHome.domian</a> &gt; <span class="el_source">Radio.java</span></div><h1>Radio.java</h1><pre class="source lang-java linenums">package ru.netology.SmartHome.domian;
 
-<span class="fc" id="L3">public class Radio {</span>
+public
+<span class="fc" id="L4">class Radio {</span>
     private int radioStation;
     private int soundVolume;
-<span class="fc" id="L6">    int[] numberStation = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};</span>
-<span class="fc" id="L7">    int[] volume = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};</span>
+<span class="fc" id="L7">    private int maxRadioStation = 9;</span>
+<span class="fc" id="L8">    private int minRadioStation = 0;</span>
+<span class="fc" id="L9">    private int maxVolume = 10;</span>
+<span class="fc" id="L10">    private int minVolume = 0;</span>
 
-    public int getRadioStation() {
-<span class="fc" id="L10">        return radioStation;</span>
+    public
+    int getRadioStation() {
+<span class="fc" id="L14">        return radioStation;</span>
     }
 
-    public void setRadioStation(int radioStation) {
-<span class="fc bfc" id="L14" title="All 2 branches covered.">        if (radioStation &gt; numberStation[9]) {</span>
-<span class="fc" id="L15">            this.radioStation = numberStation[9];</span>
-<span class="fc" id="L16">            return;</span>
+    public
+    void setRadioStation(int radioStation) {
+<span class="fc bfc" id="L19" title="All 2 branches covered.">        if (radioStation &gt; maxRadioStation) {</span>
+<span class="fc" id="L20">            this.radioStation = maxRadioStation;</span>
+<span class="fc" id="L21">            return;</span>
         }
-<span class="fc bfc" id="L18" title="All 2 branches covered.">        if (radioStation &lt; numberStation[0]) {</span>
-<span class="fc" id="L19">            this.radioStation = numberStation[0];</span>
-<span class="fc" id="L20">            return;</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">        if (radioStation &lt; minRadioStation) {</span>
+<span class="fc" id="L24">            this.radioStation = minRadioStation;</span>
+<span class="fc" id="L25">            return;</span>
         }
-<span class="fc" id="L22">        this.radioStation = radioStation;</span>
-<span class="fc" id="L23">    }</span>
+<span class="fc" id="L27">        this.radioStation = radioStation;</span>
+<span class="fc" id="L28">    }</span>
 
-    public int getSoundVolume() {
-<span class="fc" id="L26">        return soundVolume;</span>
+    public int getSoundVolume (){
+<span class="fc" id="L31">            return soundVolume;</span>
     }
 
-    public void setSoundVolume(int soundVolume) {
-<span class="fc bfc" id="L30" title="All 2 branches covered.">        if (soundVolume &gt; volume[10]) {</span>
-<span class="fc" id="L31">            this.soundVolume = volume[10];</span>
-<span class="fc" id="L32">            return;</span>
+    public void setSoundVolume ( int soundVolume){
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        if (soundVolume &gt; maxVolume) {</span>
+<span class="fc" id="L36">            this.soundVolume = maxVolume;</span>
+<span class="fc" id="L37">            return;</span>
         }
-<span class="fc bfc" id="L34" title="All 2 branches covered.">        if (soundVolume &lt; volume[0]) {</span>
-<span class="fc" id="L35">            this.soundVolume = volume[0];</span>
-<span class="fc" id="L36">            return;</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        if (soundVolume &lt; minVolume) {</span>
+<span class="fc" id="L40">                this.soundVolume = minVolume;</span>
+<span class="fc" id="L41">                return;</span>
         }
-<span class="fc" id="L38">        this.soundVolume = soundVolume;</span>
-<span class="fc" id="L39">    }</span>
+<span class="fc" id="L43">        this.soundVolume = soundVolume;</span>
+<span class="fc" id="L44">        }</span>
 
-    public int[] getNumberStation() {
-<span class="nc" id="L42">        return numberStation;</span>
+    public int getMaxRadioStation () {
+<span class="nc" id="L47">        return maxRadioStation;</span>
     }
 
-    public void setNumberStation(int[] numberStation) {
-<span class="nc" id="L46">        this.numberStation = numberStation;</span>
-<span class="nc" id="L47">    }</span>
+    public void setMaxRadioStation ( int maxRadioStation){
+<span class="nc" id="L51">            this.maxRadioStation = maxRadioStation;</span>
+<span class="nc" id="L52">    }</span>
 
-    public int[] getVolume() {
-<span class="nc" id="L50">        return volume;</span>
+    public int getMinRadioStation () {
+<span class="nc" id="L55">            return minRadioStation;</span>
     }
 
-    public void setVolume(int[] volume) {
-<span class="nc" id="L54">        this.volume = volume;</span>
-        {
-<span class="nc" id="L56">            return;</span>
-        }
+    public void setMinRadioStation ( int minRadioStation){
+<span class="nc" id="L59">            this.minRadioStation = minRadioStation;</span>
+<span class="nc" id="L60">    }</span>
 
+    public int getMaxVolume () {
+<span class="nc" id="L63">            return maxVolume;</span>
     }
 
-    public void numberRadioStation() {
-<span class="fc bfc" id="L62" title="All 2 branches covered.">        if (numberStation[9] &lt;= radioStation) {</span>
-<span class="fc" id="L63">            radioStation = numberStation[0];</span>
-<span class="fc" id="L64">            return;</span>
-        }
-<span class="fc bfc" id="L66" title="All 2 branches covered.">        if (numberStation[0] &gt;= radioStation) {</span>
-<span class="fc" id="L67">            radioStation = numberStation[9];</span>
-<span class="fc" id="L68">            return;</span>
-        }
-<span class="fc" id="L70">    }</span>
+    public void setMaxVolume ( int maxVolume){
+<span class="nc" id="L67">            this.maxVolume = maxVolume;</span>
+<span class="nc" id="L68">    }</span>
 
-    public void shouldSoundVolume() {
-<span class="fc bfc" id="L73" title="All 2 branches covered.">        if (soundVolume == volume[10]) {</span>
-<span class="fc" id="L74">            soundVolume = volume[10];</span>
-<span class="fc" id="L75">            return;</span>
+    public int getMinVolume () {
+<span class="nc" id="L71">            return minVolume;</span>
+    }
+
+    public void setMinVolume ( int minVolume){
+<span class="nc" id="L75">            this.minVolume = minVolume;</span>
+<span class="nc" id="L76">    }</span>
+
+    public void increaseRadioStation () {
+<span class="fc bfc" id="L79" title="All 2 branches covered.">        if (radioStation == maxRadioStation) {</span>
+<span class="fc" id="L80">                radioStation = minRadioStation;</span>
+<span class="fc" id="L81">                return;</span>
         }
-<span class="fc bfc" id="L77" title="All 2 branches covered.">        if (soundVolume == volume[0]) {</span>
-<span class="fc" id="L78">            soundVolume = volume[0];</span>
-<span class="fc" id="L79">            return;</span>
+<span class="fc" id="L83">        radioStation++;</span>
+<span class="fc" id="L84">    }</span>
+
+    public void decreaseRadioStation () {
+<span class="fc bfc" id="L87" title="All 2 branches covered.">        if (radioStation == minRadioStation) {</span>
+<span class="fc" id="L88">            radioStation = maxRadioStation;</span>
+<span class="fc" id="L89">            return;</span>
         }
-<span class="fc" id="L81">    }</span>
+<span class="fc" id="L91">        radioStation--;</span>
+<span class="fc" id="L92">    }</span>
+
+    public void increaseSoundVolume () {
+<span class="fc bfc" id="L95" title="All 2 branches covered.">        if (soundVolume &lt; maxVolume) {</span>
+<span class="fc" id="L96">                soundVolume++;</span>
+        }
+<span class="fc" id="L98">    }</span>
+
+    public void decreaseSoundVolume () {
+<span class="fc bfc" id="L101" title="All 2 branches covered.">        if (soundVolume &gt; minVolume) {</span>
+<span class="fc" id="L102">                soundVolume--;</span>
+        }
+<span class="fc" id="L104">    }</span>
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

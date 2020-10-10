@@ -36,29 +36,33 @@
     }
 
     public void setCurrentTemperature(int currentTemperature) {
-<span class="fc" id="L39">        this.currentTemperature = currentTemperature;</span>
-<span class="fc" id="L40">    }</span>
+<span class="pc bpc" id="L39" title="1 of 2 branches missed.">        if (currentTemperature &gt; maxTemperature) {</span>
+<span class="nc" id="L40">            return;</span>
+        }
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">        if (currentTemperature &lt; minTemperature) {</span>
+<span class="nc" id="L43">            return;</span>
+        }
+<span class="fc" id="L45">            this.currentTemperature = currentTemperature;</span>
+<span class="fc" id="L46">        }</span>
 
-    public boolean isOn() {
-<span class="nc" id="L43">        return on;</span>
+        public boolean isOn() {
+<span class="nc" id="L49">            return on;</span>
+        }
+
+        public void setOn(boolean on) {
+<span class="fc" id="L53">            this.on = on;</span>
+<span class="fc" id="L54">        }</span>
+        public void increaseCurrentTemperature() {
+<span class="fc bfc" id="L56" title="All 2 branches covered.">            if (currentTemperature &lt; maxTemperature) {</span>
+<span class="fc" id="L57">                currentTemperature++;</span>
+            }
+
+<span class="fc" id="L60">        }</span>
+        public void decreaseCurrentTemperature(){
+<span class="fc bfc" id="L62" title="All 2 branches covered.">            if (currentTemperature &gt; minTemperature) {</span>
+<span class="fc" id="L63">                currentTemperature--;</span>
+            }
+<span class="fc" id="L65">        }</span>
+
     }
-
-    public void setOn(boolean on) {
-<span class="fc" id="L47">        this.on = on;</span>
-<span class="fc" id="L48">    }</span>
-    public void increaseCurrentTemperature() {
-<span class="fc bfc" id="L50" title="All 2 branches covered.">        if (currentTemperature &lt; maxTemperature) {</span>
-<span class="fc" id="L51">            currentTemperature++;</span>
-<span class="fc" id="L52">            return;</span>
-        }
-
-<span class="fc" id="L55">    }</span>
-    public void decreaseCurrentTemperature(){
-<span class="fc bfc" id="L57" title="All 2 branches covered.">        if (currentTemperature &gt; minTemperature) {</span>
-<span class="fc" id="L58">            currentTemperature--;</span>
-<span class="fc" id="L59">            return;</span>
-        }
-<span class="fc" id="L61">    }</span>
-
-}
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
