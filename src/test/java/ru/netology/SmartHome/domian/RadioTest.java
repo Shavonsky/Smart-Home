@@ -132,12 +132,5 @@ class RadioTest {
 
         assertEquals(expected, radio.getSoundVolume());
     }
-    @Test
-    void increaseSoundVolumeIfMax2() {
-        radio.setSoundVolume(11);
-        radio.increaseSoundVolume();
-        int expected = 10;
 
-        assertEquals(expected, radio.getSoundVolume());
-    }
 }

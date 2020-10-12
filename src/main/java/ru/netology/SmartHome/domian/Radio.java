@@ -1,7 +1,6 @@
 package ru.netology.SmartHome.domian;
 
-public
-class Radio {
+public class Radio {
     private int radioStation;
     private int soundVolume;
     private int maxRadioStation = 9;
@@ -27,63 +26,75 @@ class Radio {
         this.radioStation = radioStation;
     }
 
-    public int getSoundVolume (){
-            return soundVolume;
+    public
+    int getSoundVolume() {
+        return soundVolume;
     }
 
-    public void setSoundVolume ( int soundVolume){
+    public
+    void setSoundVolume(int soundVolume) {
         if (soundVolume > maxVolume) {
             this.soundVolume = maxVolume;
             return;
         }
         if (soundVolume < minVolume) {
-                this.soundVolume = minVolume;
-                return;
+            this.soundVolume = minVolume;
+            return;
         }
         this.soundVolume = soundVolume;
-        }
+    }
 
-    public int getMaxRadioStation () {
+    public
+    int getMaxRadioStation() {
         return maxRadioStation;
     }
 
-    public void setMaxRadioStation ( int maxRadioStation){
-            this.maxRadioStation = maxRadioStation;
+    public
+    void setMaxRadioStation(int maxRadioStation) {
+        this.maxRadioStation = maxRadioStation;
     }
 
-    public int getMinRadioStation () {
-            return minRadioStation;
+    public
+    int getMinRadioStation() {
+        return minRadioStation;
     }
 
-    public void setMinRadioStation ( int minRadioStation){
-            this.minRadioStation = minRadioStation;
+    public
+    void setMinRadioStation(int minRadioStation) {
+        this.minRadioStation = minRadioStation;
     }
 
-    public int getMaxVolume () {
-            return maxVolume;
+    public
+    int getMaxVolume() {
+        return maxVolume;
     }
 
-    public void setMaxVolume ( int maxVolume){
-            this.maxVolume = maxVolume;
+    public
+    void setMaxVolume(int maxVolume) {
+        this.maxVolume = maxVolume;
     }
 
-    public int getMinVolume () {
-            return minVolume;
+    public
+    int getMinVolume() {
+        return minVolume;
     }
 
-    public void setMinVolume ( int minVolume){
-            this.minVolume = minVolume;
+    public
+    void setMinVolume(int minVolume) {
+        this.minVolume = minVolume;
     }
 
-    public void increaseRadioStation () {
+    public
+    void increaseRadioStation() {
         if (radioStation == maxRadioStation) {
-                radioStation = minRadioStation;
-                return;
+            radioStation = minRadioStation;
+            return;
         }
         radioStation++;
     }
 
-    public void decreaseRadioStation () {
+    public
+    void decreaseRadioStation() {
         if (radioStation == minRadioStation) {
             radioStation = maxRadioStation;
             return;
@@ -91,16 +102,18 @@ class Radio {
         radioStation--;
     }
 
-    public void increaseSoundVolume () {
+    public
+    void increaseSoundVolume() {
         if (soundVolume < maxVolume) {
-                soundVolume++;
+            soundVolume++;
         }
     }
 
-    public void decreaseSoundVolume () {
+    public
+    void decreaseSoundVolume() {
         if (soundVolume > minVolume) {
-                soundVolume--;
+            soundVolume--;
+
         }
     }
-
 }
