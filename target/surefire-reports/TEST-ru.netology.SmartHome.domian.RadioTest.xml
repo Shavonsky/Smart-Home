@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.SmartHome.domian.RadioTest" time="0.032" tests="14" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.SmartHome.domian.RadioTest" time="0.043" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.class.path" value="C:\Smart Home\target\test-classes;C:\Smart Home\target\classes;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.2\junit-jupiter-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Пользователь\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Пользователь\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.2\junit-jupiter-params-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;"/>
+    <property name="java.class.path" value="C:\Smart Home\target\test-classes;C:\Smart Home\target\classes;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.2\junit-jupiter-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Пользователь\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Пользователь\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.2\junit-jupiter-params-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;C:\Users\Пользователь\.m2\repository\org\projectlombok\lombok\1.18.14\lombok-1.18.14.jar;"/>
     <property name="java.vm.vendor" value="AdoptOpenJDK"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\73B5~1\AppData\Local\Temp\surefire7255334822477665690\surefirebooter7449858062125382968.jar C:\Users\Пользователь\AppData\Local\Temp\surefire7255334822477665690 2020-10-13T17-09-27_005-jvmRun1 surefire2414697733957267384tmp surefire_017746310474377304573tmp"/>
+    <property name="sun.java.command" value="C:\Users\73B5~1\AppData\Local\Temp\surefire1878929288996136602\surefirebooter7799743451416930014.jar C:\Users\Пользователь\AppData\Local\Temp\surefire1878929288996136602 2020-10-13T17-51-48_873-jvmRun1 surefire15382435799033702947tmp surefire_017165055256540577942tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Smart Home\target\test-classes;C:\Smart Home\target\classes;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.2\junit-jupiter-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Пользователь\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Пользователь\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.2\junit-jupiter-params-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Smart Home\target\test-classes;C:\Smart Home\target\classes;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.2\junit-jupiter-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Пользователь\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Пользователь\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.2\junit-jupiter-params-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\Пользователь\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;C:\Users\Пользователь\.m2\repository\org\projectlombok\lombok\1.18.14\lombok-1.18.14.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Пользователь"/>
     <property name="user.language" value="ru"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\73B5~1\AppData\Local\Temp\surefire7255334822477665690\surefirebooter7449858062125382968.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\73B5~1\AppData\Local\Temp\surefire1878929288996136602\surefirebooter7799743451416930014.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.8+10"/>
@@ -63,16 +63,16 @@
   </properties>
   <testcase name="increaseSoundVolume" classname="ru.netology.SmartHome.domian.RadioTest" time="0"/>
   <testcase name="decreaseSoundVolume" classname="ru.netology.SmartHome.domian.RadioTest" time="0"/>
-  <testcase name="increaseSoundVolumeIfUnderMax" classname="ru.netology.SmartHome.domian.RadioTest" time="0.001"/>
-  <testcase name="decreaseSoundVolumeIfMin" classname="ru.netology.SmartHome.domian.RadioTest" time="0"/>
-  <testcase name="decreaseRadioStationIfMin" classname="ru.netology.SmartHome.domian.RadioTest" time="0"/>
-  <testcase name="decreaseSoundVolumeIfOverMin" classname="ru.netology.SmartHome.domian.RadioTest" time="0"/>
-  <testcase name="increaseRadioStation" classname="ru.netology.SmartHome.domian.RadioTest" time="0"/>
-  <testcase name="radioStation" classname="ru.netology.SmartHome.domian.RadioTest" time="0"/>
-  <testcase name="radioStation2" classname="ru.netology.SmartHome.domian.RadioTest" time="0"/>
-  <testcase name="radioStation3" classname="ru.netology.SmartHome.domian.RadioTest" time="0.008"/>
-  <testcase name="increaseRadioStationIfMax" classname="ru.netology.SmartHome.domian.RadioTest" time="0.001"/>
-  <testcase name="decreaseRadioStation" classname="ru.netology.SmartHome.domian.RadioTest" time="0.001"/>
-  <testcase name="increaseSoundVolumeIfMax" classname="ru.netology.SmartHome.domian.RadioTest" time="0.002"/>
+  <testcase name="increaseSoundVolumeIfUnderMax" classname="ru.netology.SmartHome.domian.RadioTest" time="0"/>
+  <testcase name="decreaseSoundVolumeIfMin" classname="ru.netology.SmartHome.domian.RadioTest" time="0.002"/>
+  <testcase name="decreaseRadioStationIfMin" classname="ru.netology.SmartHome.domian.RadioTest" time="0.004"/>
+  <testcase name="decreaseSoundVolumeIfOverMin" classname="ru.netology.SmartHome.domian.RadioTest" time="0.001"/>
+  <testcase name="increaseRadioStation" classname="ru.netology.SmartHome.domian.RadioTest" time="0.002"/>
+  <testcase name="radioStation" classname="ru.netology.SmartHome.domian.RadioTest" time="0.002"/>
+  <testcase name="radioStation2" classname="ru.netology.SmartHome.domian.RadioTest" time="0.003"/>
+  <testcase name="radioStation3" classname="ru.netology.SmartHome.domian.RadioTest" time="0.003"/>
+  <testcase name="increaseRadioStationIfMax" classname="ru.netology.SmartHome.domian.RadioTest" time="0.002"/>
+  <testcase name="decreaseRadioStation" classname="ru.netology.SmartHome.domian.RadioTest" time="0"/>
+  <testcase name="increaseSoundVolumeIfMax" classname="ru.netology.SmartHome.domian.RadioTest" time="0.001"/>
   <testcase name="decreaseRadioStationIfBelowMin" classname="ru.netology.SmartHome.domian.RadioTest" time="0.001"/>
 </testsuite>
