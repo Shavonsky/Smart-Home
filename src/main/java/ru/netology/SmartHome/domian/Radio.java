@@ -1,5 +1,13 @@
 package ru.netology.SmartHome.domian;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+
 public class Radio {
     private int radioStation = 10;
     private int soundVolume;
@@ -7,10 +15,6 @@ public class Radio {
     private int minRadioStation = 0;
     private int maxVolume = 100;
     private int minVolume = 0;
-
-    public
-    Radio() {
-    }
 
     public Radio(int radioStation) {
         setRadioStation(radioStation);
