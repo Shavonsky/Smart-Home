@@ -11,15 +11,14 @@ import lombok.NoArgsConstructor;
 public class Radio {
     private int radioStation = 10;
     private int soundVolume;
-    private final int maxRadioStation = 10;
-    private final int minRadioStation = 0;
-    private final int maxVolume = 100;
-    private final int minVolume = 0;
+    private int maxRadioStation = 10;
+    private int minRadioStation = 0;
+    private int maxVolume = 100;
+    private int minVolume = 0;
 
     public Radio(int radioStation) {
         setRadioStation(radioStation);
     }
-
 
     public
     int getRadioStation() {
