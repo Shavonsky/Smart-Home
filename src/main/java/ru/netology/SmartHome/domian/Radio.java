@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-
 public class Radio {
     private int radioStation = 10;
     private int soundVolume;
@@ -19,7 +18,6 @@ public class Radio {
     public Radio(int radioStation) {
         setRadioStation(radioStation);
     }
-
 
     public
     int getRadioStation() {
