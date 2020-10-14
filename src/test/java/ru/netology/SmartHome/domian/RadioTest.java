@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RadioTest {
 
-    Radio radio = new Radio();
+    Radio radio = new Radio(0);
 
     @Test
     void radioStation() {
@@ -59,7 +59,7 @@ class RadioTest {
 
     @Test
     void decreaseRadioStationIfMin() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
         radio.setRadioStation(0);
         radio.decreaseRadioStation();
 
