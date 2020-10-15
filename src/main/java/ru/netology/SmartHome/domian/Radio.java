@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-
-
 public class Radio {
     private int radioStation = 10;
     private int soundVolume;
@@ -21,13 +19,11 @@ public class Radio {
         setRadioStation(radioStation);
     }
 
-    public
-    int getRadioStation() {
+    public int getRadioStation() {
         return radioStation;
     }
 
-    public
-    void setRadioStation(int radioStation) {
+    public void setRadioStation(int radioStation) {
         if (radioStation > maxRadioStation) {
             this.radioStation = maxRadioStation;
             return;
@@ -39,8 +35,7 @@ public class Radio {
         this.radioStation = radioStation;
     }
 
-    public
-    void increaseRadioStation() {
+    public void increaseRadioStation() {
         if (radioStation == maxRadioStation) {
             radioStation = minRadioStation;
             return;
@@ -48,8 +43,7 @@ public class Radio {
         radioStation++;
     }
 
-    public
-    void decreaseRadioStation() {
+    public void decreaseRadioStation() {
         if (radioStation == minRadioStation) {
             radioStation = maxRadioStation;
             return;
@@ -57,13 +51,11 @@ public class Radio {
         radioStation--;
     }
 
-    public
-    int getSoundVolume() {
+    public int getSoundVolume() {
         return soundVolume;
     }
 
-    public
-    void setSoundVolume(int soundVolume) {
+    public void setSoundVolume(int soundVolume) {
         if (soundVolume > maxVolume) {
             this.soundVolume = maxVolume;
             return;
@@ -75,15 +67,13 @@ public class Radio {
         this.soundVolume = soundVolume;
     }
 
-    public
-    void increaseSoundVolume() {
+    public void increaseSoundVolume() {
         if (soundVolume < maxVolume) {
             soundVolume++;
         }
     }
 
-    public
-    void decreaseSoundVolume() {
+    public void decreaseSoundVolume() {
         if (soundVolume > minVolume) {
             soundVolume--;
 
