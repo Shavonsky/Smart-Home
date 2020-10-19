@@ -2,7 +2,7 @@ package ru.netology.SmartHome.domian;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ConditionerTest {
 
@@ -81,6 +81,7 @@ class ConditionerTest {
 
         assertEquals(expected, conditioner.getCurrentTemperature());
     }
+
     @Test
     void increaseCurrentTemperature4() {
         conditioner.setMaxTemperature(0);
